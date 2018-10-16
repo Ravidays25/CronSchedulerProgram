@@ -28,6 +28,8 @@ public class MyApp {
 			Scheduler scheduler2 = new StdSchedulerFactory().getScheduler();
 			scheduler2.start();
 			scheduler2.scheduleJob(job2, trigger2);
+			
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
