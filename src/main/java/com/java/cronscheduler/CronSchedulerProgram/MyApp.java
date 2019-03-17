@@ -20,7 +20,7 @@ public class MyApp {
 					.withSchedule(CronScheduleBuilder.cronSchedule("0/5 * * * * ?")).build();
 			Trigger trigger2 = TriggerBuilder.newTrigger().withIdentity("cronTrigger2", "group2")
 					.withSchedule(CronScheduleBuilder.cronSchedule("0/7 * * * * ?")).build();
-
+			
 			Scheduler scheduler1 = new StdSchedulerFactory().getScheduler();
 			scheduler1.start();
 			scheduler1.scheduleJob(job1, trigger1);
